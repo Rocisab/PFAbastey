@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --bs-body-font-family: 'Bacasime Antique', serif;
+    --bs-heading-color: rgb(129, 125, 125);
+    --bs-navbar-padding-y: 0 !important;
+    --bs-nav-link-padding-y: 0 !important;
+    --bs-navbar-padding-x: 0 !important;
+    --bs-nav-link-padding-x: 0 !important;
+    --bs-navbar-nav-link-padding-x: 0 !important;
+}
+
+body{
+    font-family: 'Bacasime Antique', serif;
+    background-color: #b2a8a1;
+    background: url("../img/fondo.jpg");
+    background-size: cover;
+    /*display: table-footer-group;*/
+}
+.logo{
+    width: 350px; 
+    }
+h1{
+    text-align: center;
+    color: rgb(129, 125, 125);
+    padding: 20px;
+    font-weight: bold;
+}
+h2{     
+    color: rgb(129, 125, 125);
+    text-align: left;
+    margin-top: 100px;
+    padding-left: 60px;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: #7c5570;
+    font-weight: bold;
+}
+ul{
+    padding: 40px;
+    list-style: none;
+    }
+ul > li {
+    display: inline-block;
+    padding-left: 20px;
+}
+.circular{
+    border-radius: 20px;
+}
+.section1 {
+    margin:auto;
+    text-align: center;
+}
+.section1 img{
+    border-radius: 15px;
+}
+.banner{
+    height: 460px;
+    width: 100%;
+    border-radius: 0px !important;
+}
+.producto{
+    display: flex;
+    border-top: 1px dotted #7c5570;
+    border-bottom: 1px dotted #7c5570;
+    flex-direction: row;
+}
+.producto img{
+    height: 350px;
+    padding: 45px 45px 0px 45px ;
+}
+.producto p, .promociones p, .contacto p{
+    padding: 20px 60px;
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+.contacto input[type=text], textarea{
+    width: 800px;
+    padding: 5px 20px;
+    border: 1px dotted #7c5570;
+    border-radius: 15px;
+}
+.section1 p{
+    text-align: center;    
+    color: black;
+    padding: 60px 250px 20px 400px;
+    line-height: 1.5;
+}
+.textbox{
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px 0px 45px 0px;
+}
+.video{
+    border-radius: 15px ;
+}
+.volver{ 
+    position: fixed;
+    top: auto;
+    bottom: 10px;
+    right: 10px; 
+}
+.volver img{
+    width: 30px;
+    height: 30px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 1rem;
+}
+nav ul li a {
+    color: #7c5570;
+    text-decoration: none;
+}
+main.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 1rem;
+    padding: 1rem;
+}
+.promociones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+.promociones img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+footer h2 {
+    margin-left: 15px;
+    padding: 20px;
+    text-align: center;
+}
+.carousel-control-next-icon{
+    filter: invert(100%) url(#color-filter);
+    position: absolute;
+    top: 100px;
+    right: 20px;
+}
+.carousel-control-prev-icon{
+    filter: invert(100%) url(#color-filter);
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+@media (min-width: 992px) {
+   .navbar-expand-lg .navbar-collapse {
+    justify-content: center;
+   }
+}
+@media (max-width: 768px) {
+    header {
+      text-align: center;
+    }
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo {
+      margin-bottom: 1rem;
+    }
+    main {
+      justify-content: center;
+    }
+}
