@@ -1,0 +1,45 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 100px;
+  gap: 30px;
+  padding: 30px;
+}
+
+.wrapper-contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.wrapper-promo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.box1 {
+  display: flex;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 7;
+}
+
+.box2 {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+@media (max-width: 1350px) {
+  .wrapper, .wrapper-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+

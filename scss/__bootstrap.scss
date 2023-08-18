@@ -1,0 +1,35 @@
+$bs-body-font-family: 'Bacasime Antique', serif;
+$bs-body-font-size: 24px;
+$bs-heading-color: rgb(129, 125, 125);
+$bs-navbar-padding-y: 0 !important;
+$bs-nav-link-padding-y: 0 !important;
+$bs-navbar-padding-x: 0 !important;
+$bs-nav-link-padding-x: 0 !important;
+$bs-navbar-nav-link-padding-x: 0 !important;
+$bs-btn-bg: #7c5570 !important;
+$bs-btn-border-color: #7c5570 !important;
+$bs-btn-hover-bg: rgb(129, 125, 125) !important;
+$bs-btn-hover-border-color: rgb(129, 125, 125) !important;
+$bs-btn-active-bg: rgb(129, 125, 125) !important;
+$bs-btn-active-border-color: rgb(129, 125, 125) !important;
+$bs-btn-disabled-bg: #7c5570 !important;
+$bs-btn-disabled-border-color: #7c5570 !important;
+
+* {
+  --bs-body-font-family: $bs-body-font-family;
+  --bs-body-font-size: $bs-body-font-size;
+  --bs-heading-color: $bs-heading-color;
+  --bs-navbar-padding-y: $bs-navbar-padding-y;
+  --bs-nav-link-padding-y: $bs-nav-link-padding-y;
+  --bs-navbar-padding-x: $bs-navbar-padding-x;
+  --bs-nav-link-padding-x: $bs-nav-link-padding-x;
+  --bs-navbar-nav-link-padding-x: $bs-navbar-nav-link-padding-x;
+  --bs-btn-bg: $bs-btn-bg;
+  --bs-btn-border-color: $bs-btn-border-color;
+  --bs-btn-hover-bg: $bs-btn-hover-bg;
+  --bs-btn-hover-border-color: $bs-btn-hover-border-color;
+  --bs-btn-active-bg: $bs-btn-active-bg;
+  --bs-btn-active-border-color: $bs-btn-active-border-color;
+  --bs-btn-disabled-bg: $bs-btn-disabled-bg;
+  --bs-btn-disabled-border-color: $bs-btn-disabled-border-color;
+}

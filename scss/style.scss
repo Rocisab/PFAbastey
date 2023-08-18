@@ -1,0 +1,266 @@
+@import '__bootstrap.scss';
+@import '__grids.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $bs-body-font-family;
+  background-color: #b2a8a1;
+  background: url("../img/fondo.jpg");
+  background-size: cover;
+  //display: table-footer-group;
+}
+
+footer {
+  padding: 45px 20px;
+}
+
+.logo {
+  width: 350px;
+}
+
+h1 {
+  text-align: center;
+  color: $bs-heading-color;
+  padding: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  color: $bs-heading-color;
+  text-align: left;
+  margin-top: 50px;
+  padding: 20px 45px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #7c5570;
+  font-weight: bold;
+}
+
+ul {
+  padding: 40px;
+  list-style: none;
+
+  > li {
+    display: inline-block;
+    padding-left: 20px;
+  }
+}
+
+footer {
+  h2 {
+    margin-left: 15px;
+    padding: 20px;
+    text-align: center;
+    }
+}
+
+nav {
+   ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    li {
+        margin: 0 1rem;
+        a {
+        color: #7c5570;
+        text-decoration: none;
+        }
+    }
+   }
+}
+
+.banner {
+    height: 460px;
+    width: 100%;
+    border-radius: 0px !important;
+}
+
+.circular {
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.card {
+    padding: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    justify-content: center;
+}
+
+.card-icon {
+    font-size: 15px;
+}
+
+.card-margin {
+    margin: 0px 30px;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    input[type='text'],
+    textarea {
+      max-width: 800px;
+      width: 100%;
+      margin: auto;
+      padding: 5px 20px;
+      border: 1px dotted #7c5570;
+      border-radius: 15px;
+    }
+  }
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img362 {
+    width: min(100%, 362px);
+    height: auto;
+    margin: auto;
+}
+
+.inline {
+    display: inline;
+}
+
+.lista-simple, .lista-simple li {
+    padding: 0px;
+}
+
+.producto {
+    display: flex;
+    border-top: 1px dotted #7c5570;
+    border-bottom: 1px dotted #7c5570;
+    flex-direction: row;
+    img {
+      height: 350px;
+      padding: 45px;
+    }
+    p,
+    .promociones p,
+    .contacto p {
+      padding: 20px 45px;
+    }
+}
+
+.promociones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+}
+
+.purple {
+    color: #4a2e42;
+}
+
+.section1 {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: row-reverse;
+    p {
+      text-align: center;
+      color: black;
+      line-height: 1.5;
+    }
+    img {
+      border-radius: 15px;
+    }
+}
+  
+
+.textbox {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 45px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.video {
+  border-radius: 15px;
+}
+
+.volver {
+  position: fixed;
+  top: auto;
+  bottom: 10px;
+  right: 10px;
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.w100 {
+  width: 100%;
+}
+
+.vid {
+  width: min(100%, 980px);
+  height: 500px;
+  margin: auto;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    .navbar-collapse {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 989px) {
+  .vid {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logo {
+      margin-bottom: 1rem;
+    }
+  }
+  main {
+    justify-content: center;
+  }
+  .section1 {
+    flex-wrap: wrap;
+    flex-direction: row;
+    .vid {
+      height: 250px;
+    }
+  }
+}
